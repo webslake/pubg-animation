@@ -1,0 +1,46 @@
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#mask
+{
+    width: 622px;
+    height: 360px;
+    background-image: url(img/pubg-wallpaper.jpg);
+    background-size: cover;
+    -webkit-mask:url(img/pubg-logo.svg);
+    -webkit-mask-size: cover;
+    animation: moveWallpaper 20s cubic-bezier(0,0,0,0) 0s infinite;
+}
+
+@keyframes moveWallpaper
+{
+    0%{ background-position: 0 0 }
+    33.33333%{ background-position: 600% 0  }
+    66.66666%{ background-position: -600% 0  }
+    100%{ background-position: 0 0 }
+}
+
+#ytd_link
+{
+    position: fixed;
+    top: 20px;
+    right: 0;
+    left: 0;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #ff0000;
+    border-radius: 4px;
+    z-index: 125;
+}
